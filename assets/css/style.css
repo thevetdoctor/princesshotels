@@ -2100,8 +2100,8 @@ textarea:focus {
     width: 45px;
 }
 .slider-active.owl-carousel > .owl-nav div:hover {
-    background-color: #e02c2b;
-    color: #fff;
+    background-color: #89653f;
+    color: #89653f;
 }
 .slider-active.owl-carousel > .owl-nav div.owl-next {
     left: auto;
