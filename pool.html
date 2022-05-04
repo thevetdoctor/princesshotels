@@ -256,8 +256,8 @@
                 </div>
                 <div class="tab-content jump yellow-color">
                     <div id="tab1" class="tab-pane active">
-                        <div class="row">
-                            <div class="custom-col-5">
+                        <div class="row" id="product-card-row">
+                            <div class="custom-col-5" onclick="console.log('close me')">
                                 <div class="product-wrapper mb-25">
                                     <div class="product-img">
                                         <a href="#product-details">
@@ -266,9 +266,9 @@
                                             
                                             <img src="assets/images/lounge/Cranberry 2.jpg" alt="">
                                             <span>New</span>
-                                        </div>
-                                        <!-------And ends here-->
-                                        </a>
+                                            </div>
+                                            <!-------And ends here-->
+                                            </a>
                                         <div class="product-action">
                                             <div class="pro-action-left">
                                                 <a title="Add Tto Cart" href="#"><i class="ion-android-cart"></i> Add Tto Cart</a>
@@ -279,9 +279,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
+                                    <div class="product-content" onclick="console.log('close me')">
                                         <h4>
-                                            <a href="#"><b>CRANBERRY</b> </a>
+                                            <a href="#" onclick="console.log('close me')"><b>CRANBERRY</b> </a>
                                         </h4>
                                         <div class="product-price-wrapper">
                                             <span>&#8358;3,000</span>
@@ -290,16 +290,19 @@
                                     </div>
                                 </div>
                             </div>
-           
-                            <div class="custom-col-5">
-                                <div class="product-wrapper mb-25">
+                            
+                            <!-- Implement reusabable logic for product cards -->
+                            <!-- <div id="product-card" class="custom-col-5">Product Card</div> -->
+
+                            <div class="custom-col-5" onclick="console.log('ll')">
+                                <div class="product-wrapper mb-25" onclick="console.log('ll')">
                                     <div class="product-img">
-                                        <a href="#product-details">
-                                            <img src="assets/images//lounge/Chivita-100% 2.jpg" alt="">
+                                        <a href="#product-details" onclick="console.log('close me')">
+                                            <img src="assets/images/lounge/Chivita-100% 2.jpg" alt="">
                                         </a>
-                                        <div class="product-action">
+                                        <div class="product-action" onclick="console.log('close me')">
                                             <div class="pro-action-left">
-                                                <a title="Add Tto Cart" href="#"><i class="ion-android-cart"></i> Add Tto Cart</a>
+                                                <a title="Add Tto Cart" href="#"><i class="ion-android-cart"></i> Add To Cart</a>
                                             </div>
                                             <div class="pro-action-right">
                                                 <a title="Wishlist" href="#wishlist"><i class="ion-ios-heart-outline"></i></a>
@@ -4584,6 +4587,7 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/product-card.js"></script>
     </body>
 
 <!-- Mirrored from template.hasthemes.com/billy/billy/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 06:39:18 GMT -->

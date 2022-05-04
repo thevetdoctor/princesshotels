@@ -104,18 +104,18 @@
                                     </a>
                                 </div>
                                 <div class="header-cart">
-                                    <a href="#">
+                                    <a href="#" id="header-cart">
                                         <div class="header-icon-style">
                                             <i class="icon-handbag icons"></i>
-                                            <span class="count-style">02</span>
+                                            <span class="count-style" id="product-count">02</span>
                                         </div>
                                         <div class="cart-text">
                                             <span class="digit">My Cart</span>
-                                            <span class="cart-digit-bold">$209.00</span>
+                                            <span class="cart-digit-bold" id="total-value">$209.00</span>
                                         </div>
                                     </a>
-                                    <div class="shopping-cart-content">
-                                        <ul>
+                                    <div class="shopping-cart-content" id="shopping-cart">
+                                        <!-- <ul>
                                             <li class="single-shopping-cart">
                                                 <div class="shopping-cart-img">
                                                     <a href="#"><img alt="" src="assets/img/cart/cart-1.jpg"></a>
@@ -142,15 +142,15 @@
                                                     <a href="#"><i class="ion ion-close"></i></a>
                                                 </div>
                                             </li>
-                                        </ul>
-                                        <div class="shopping-cart-total">
+                                        </ul> -->
+                                        <!-- <div class="shopping-cart-total">
                                             <h4>Shipping : <span>$20.00</span></h4>
                                             <h4>Total : <span class="shop-total">$260.00</span></h4>
                                         </div>
                                         <div class="shopping-cart-btn">
                                             <a href="cart-page.html">view cart</a>
                                             <a href="checkout.html">checkout</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                             </div>
@@ -371,14 +371,14 @@
                                         <tr>
                                             <th>Image</th>
                                             <th>Product Name</th>
-                                            <th>Until Price</th>
+                                            <th>Unit Price</th>
                                             <th>Qty</th>
                                             <th>Subtotal</th>
                                             <th>action</th>
                                         </tr>
                                     </thead>
-                                    <tbody>
-                                        <tr>
+                                    <tbody id="cart-list">
+                                        <!-- <tr>
                                             <td class="product-thumbnail">
                                                 <a href="#"><img src="assets/img/cart/cart-3.jpg" alt=""></a>
                                             </td>
@@ -428,7 +428,7 @@
                                                 <a href="#"><i class="fa fa-pencil"></i></a>
                                                 <a href="#"><i class="fa fa-times"></i></a>
                                            </td>
-                                        </tr>
+                                        </tr> -->
                                     </tbody>
                                 </table>
                             </div>
@@ -646,6 +646,8 @@
         <script src="assets/js/owl.carousel.min.js"></script>
         <script src="assets/js/plugins.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/shopping-cart.js"></script>
+        <script src="assets/js/cart-list.js"></script>
     </body>
 
 <!-- Mirrored from template.hasthemes.com/billy/billy/cart-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 03 Mar 2022 06:39:16 GMT -->
