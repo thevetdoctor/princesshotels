@@ -1,6 +1,7 @@
 // console.log('Shopping Cart');
 const headerCart = document.getElementById('header-cart');
 const shoppingCart = document.getElementById('shopping-cart');
+const grandTotal = document.getElementById('grand-total');
 const productCount = document.getElementById('product-count');
 const totalValue = document.getElementById('total-value');
 
@@ -57,3 +58,21 @@ if(shoppingCart){
 // eslint-disable-next-line no-lone-blocks
 {/* <a href="#"><i class="ion ion-close"></i></a> */}
 
+const total = `
+                <div class="title-wrap">
+                <h4 class="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
+                </div>
+                <h5>Total products <span>N${totalCost}</span></h5>
+                <div class="total-shipping">
+                <h5>Total shipping</h5>
+             
+                </div>
+                <h4 class="grand-totall-title">Grand Total  <span>N${totalCost}</span></h4>
+                <a target="_blank" href="https://paystack.com/pay/princessluxuryhotels">Proceed to Checkout</a>`;
+
+grandTotal.innerHTML += total;
+
+   // <ul>
+                //     <li><input type="checkbox"> Standard <span>N200.00</span></li>
+                //     <li><input type="checkbox"> Express <span>N300.00</span></li>
+                // </ul>
