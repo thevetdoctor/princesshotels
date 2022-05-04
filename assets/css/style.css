@@ -3799,6 +3799,10 @@ h4.shop-sidebar-title {
 .table-content table td.product-thumbnail {
     width: 150px;
 }
+.cart-img {
+    width: 60px;
+    height: 60px;
+}
 .table-content table td.product-name {
     width: 435px;
 }
