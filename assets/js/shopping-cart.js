@@ -12,6 +12,7 @@ const totalCost = cartProducts.map(x => (x.quantity * x.price)).reduce((x, y) =>
 const totalCount = cartProducts.map(x => (x.quantity)).reduce((x, y) => x + y, 0);
 const shippingCost = 20;
 
+if(headerCart) {
 headerCart.innerHTML = `
                     <div class="header-icon-style">
                         <i class="icon-handbag icons"></i>
@@ -22,7 +23,7 @@ headerCart.innerHTML = `
                         <span class="cart-digit-bold">$${totalCost}.00</span>
                     </div>
                     `;
-
+}
 const cart = (product) => `
                     <ul><li class="single-shopping-cart">
                         <div class="shopping-cart-img">
@@ -47,9 +48,10 @@ const extra = `
                     <a href="cart-page.html">view cart</a>
                     <a href="checkout.html">checkout</a>
                 </div>`;
+if(shoppingCart){
 
-cartProducts.forEach(product => {
-    shoppingCart.innerHTML += cart(product)
-});
-
-shoppingCart.innerHTML += extra;
+    cartProducts.forEach(product => {
+        shoppingCart.innerHTML += cart(product)
+    });
+    shoppingCart.innerHTML += extra;
+}

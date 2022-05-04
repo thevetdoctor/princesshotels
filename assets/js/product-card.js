@@ -1,7 +1,7 @@
 console.log('Product card');
 // const productCard = document.getElementById('product-card');
 const productCard = document.getElementById('product-card-row');
-console.log(productCard.innerText);
+console.log(productCard?.innerText);
 
 function log() {
     console.log('logging');
@@ -215,19 +215,19 @@ const poolProducts = [
     },
 ];
 
-console.log(poolProducts);
+// console.log(poolProducts);
 
 const card = (product) => `
-            <div class="custom-col-5" onclick="console.log('${product.name}')">
-            <div class="product-wrapper mb-25" onclick="console.log('${product.name}')">
+            <div onmouseover="console.log('close me')" class="custom-col-5">
+            <div onclick="console.log('close me')" class="product-wrapper mb-25">
                 <div class="product-img">
                     <a href="#product-details">
                         <img src="${product.image}" alt="">
                         <!--<span>New</span>--!>
-                        </a>
+                    </a>
                     <div class="product-action">
                         <div class="pro-action-left">
-                            <a title="Add Tto Cart" href="#"><i class="ion-android-cart"></i> Add To Cart</a>
+                            <a onclick="console.log('close me')" title="Add To Cart"><i class="ion-android-cart"></i> Add To Cart</a>
                         </div>
                         <div class="pro-action-right">
                             <a title="Wishlist" href="#wishlist"><i class="ion-ios-heart-outline"></i></a>
@@ -242,14 +242,16 @@ const card = (product) => `
                     <div class="product-price-wrapper">
                         <span>&#8358;${product.price}</span>
                         <span class="product-price-old">${(product.avalaible !== undefined) ? product.avalaible : ''}</span>
-                        </div>
+                    </div>
                 </div>
             </div>
             </div>`;
+if(productCard){
 
-// productCard.innerHTML = '';
-
-poolProducts.forEach(product => {
-    const {name, image, price} = product;
-    productCard.innerHTML += card(product);
-});
+    productCard.innerHTML = '';
+    
+    poolProducts.forEach(product => {
+        const {name, image, price} = product;
+        productCard.innerHTML += card(product);
+    });
+}
