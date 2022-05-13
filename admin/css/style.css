@@ -869,6 +869,7 @@ ul.top-menu>li>a:focus {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
+    border-radius: 8%;
 }
 
 .market-update-block.clr-block-2 {
@@ -878,6 +879,7 @@ ul.top-menu>li>a:focus {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
+    border-radius: 8%;
 }
 
 .market-update-block.clr-block-3 {
@@ -887,6 +889,7 @@ ul.top-menu>li>a:focus {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
+    border-radius: 8%;
 }
 
 .market-update-block.clr-block-4 {
@@ -896,6 +899,7 @@ ul.top-menu>li>a:focus {
     -webkit-transition: 0.5s all;
     -moz-transition: 0.5s all;
     -o-transition: 0.5s all;
+    border-radius: 8%;
 }
 
 .market-update-block.clr-block-1:hover {
