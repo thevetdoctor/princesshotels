@@ -15,7 +15,7 @@ const poolProducts = [
     },
     {
         name: 'CHI VITA 100 PERCENT',
-        image: 'assets/images/lounge/Chivita-100% 2.jpg',
+        image: 'assets/images/lounge/Chivita-100percent.jpg',
         price: '1,200'
     },
     {
