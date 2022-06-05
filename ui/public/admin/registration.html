@@ -30,16 +30,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="reg-w3">
 <div class="w3layouts-main">
 	<h2>Register Now</h2>
-		<form action="#" method="post">
-			<input type="text" class="ggg" name="Name" placeholder="NAME" required="">
-			<input type="email" class="ggg" name="Email" placeholder="E-MAIL" required="">
-			<input type="text" class="ggg" name="Phone" placeholder="PHONE" required="">
-			<input type="password" class="ggg" name="Password" placeholder="PASSWORD" required="">
-			<h4><input type="checkbox" />I agree to the Terms of Service and Privacy Policy</h4>
+		<div>
+			<input id="name" onchange="handleUsername(value)" type="text" class="ggg" name="name" value="" placeholder="NAME" required="">
+			<input id="email" onchange="handleEmail(value)" type="email" class="ggg" name="email" value=""  placeholder="E-MAIL" required="">
+			<input id="phone" onchange="handlePhone(value) "type="text" class="ggg" name="phone" value=""  placeholder="PHONE" required="">
+			<input id="password" onchange="handlePassword(value)" type="password" class="ggg" name="password" value=""  placeholder="PASSWORD" required="">
+			<h4><input id="terms" onchange="handleTerms(checked)" type="checkbox" required="" />I agree to the Terms of Service and Privacy Policy</h4>
 			
 				<div class="clearfix"></div>
-				<input type="submit" value="submit" name="register">
-		</form>
+				<input onclick="signup()" type="submit" value="submit" name="register">
+		</div>
 		<p>Already Registered.<a href="login.html">Login</a></p>
 </div>
 </div>
@@ -50,5 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
+<script src="./js/profile.js"></script>
+<script src="js/signup.js"></script>
 </body>
 </html>

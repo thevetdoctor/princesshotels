@@ -30,14 +30,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="log-w3">
 <div class="w3layouts-main">
 	<h2>Sign In Now</h2>
+		<!-- <form action="#" method=""> -->
 		<div>
-			<input id="email" type="email" class="ggg" name="Email" value="" placeholder="E-MAIL" oninput="handleEmail();" required="">
-			<input id="password" type="password" class="ggg" name="Password" value="" placeholder="PASSWORD" oninput="handlePassword();"  required="">
+			<input id="email" onchange="handleEmail(value)" type="email" class="ggg" name="email" value="" placeholder="E-MAIL" required="">
+			<input id="password" onchange="handlePassword(value)" type="password" class="ggg" name="password" value="" placeholder="PASSWORD" required="">
 			<span><input type="checkbox" />Remember Me</span>
-			<h6><a href="./index.html">Forgot Password?</a></h6>
+			<h6><a href="#">Forgot Password?</a></h6>
 				<div class="clearfix"></div>
-				<input type="submit" value="Sign In" name="login" onclick="login()">
+				<input onclick="login()" type="submit" value="Sign In" name="login">
 		</div>
+
+		<!-- </form> -->
 		<p>Don't Have an Account ?<a href="registration.html">Create an account</a></p>
 </div>
 </div>
@@ -48,6 +51,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/jquery.nicescroll.js"></script>
 <!--[if lte IE 8]><script language="javascript" type="text/javascript" src="js/flot-chart/excanvas.min.js"></script><![endif]-->
 <script src="js/jquery.scrollTo.js"></script>
+<script src="./js/profile.js"></script>
 <script src="js/login.js"></script>
 </body>
 </html>
