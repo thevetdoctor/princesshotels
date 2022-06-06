@@ -773,12 +773,8 @@ const addToCart = (name, image, price, productId, category) => {
     makeOrder(payload);
     console.log(payload);
     localStorage.setItem('cartProducts', JSON.stringify(state));
-<<<<<<< HEAD
-    console.log(JSON.parse(localStorage.getItem('cartProducts')));
-=======
     console.log('cart', JSON.parse(localStorage.getItem('cartProducts')));
 
->>>>>>> 427a7c8f67116cefcff4cfff69f736c0e7e33f87
 };
 
 
