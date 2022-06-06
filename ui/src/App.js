@@ -1,6 +1,6 @@
 // import Login from "./Login";
 import { Fragment, useState, useEffect } from 'react';
-import { Banner } from './Banner';
+// import { Banner } from './Banner';
 import { Header } from './Header';
 import { poolSofts } from './js/pool-softs';
 import { poolWines } from './js/pool-wines.js';
@@ -24,7 +24,7 @@ function App() {
   return (
     <Fragment>
     <Nav />
-    <Banner />
+    {/* <Banner /> */}
     <Header activePage={activePage} handleActive={handleActive} />
     <div className="App" style={{display: 'flex', flexFlow: 'row wrap', justifyContent: 'center'}}>
      {poolProducts[activePage].map(product => {
