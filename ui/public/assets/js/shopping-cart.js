@@ -70,7 +70,7 @@ const total = `
                 <h4 class="grand-totall-title">Grand Total  <span>N${totalCost}</span></h4>
                 <a target="_blank" href="https://paystack.com/pay/princessluxuryhotels">Proceed to Checkout</a>`;
 
-grandTotal.innerHTML += total;
+// grandTotal.innerHTML += total;
 
    // <ul>
                 //     <li><input type="checkbox"> Standard <span>N200.00</span></li>
